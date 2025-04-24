@@ -4,7 +4,7 @@
   "package": "dev.veygax.carpetvttextension.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "rules.stackableTotems.ItemStack_stackableTotemsMixin",
+    "rules.stackableUnstackables.ItemStack_stackableUnstackablesMixin",
     "rules.playerLeash.MixinPlayerEntity",
     "rules.playerLeash.MixinServerPlayerEntity",
     "rules.playerLeash.MixinServerWorld"

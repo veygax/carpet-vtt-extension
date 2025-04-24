@@ -11,7 +11,10 @@ public class VTTSettings {
     public static final String VTTCategory = "VTT";
     
     @Rule(categories = {VTTCategory, SURVIVAL},options = {"1", "16", "64"}, strict = false)
-    public static int stackableTotems = 1;
+    public static int stackableUnstackablesAmount = 1;
+    
+    @Rule(categories = {VTTCategory, SURVIVAL})
+    public static String stackableUnstackables = "";
 
     @Rule(categories = {VTTCategory, SURVIVAL})
     public static boolean playerLeash = false;

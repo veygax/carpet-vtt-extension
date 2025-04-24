@@ -1,4 +1,5 @@
 {
-    "carpet.rule.stackableTotems.desc": "Sets the maximum stack size for Totems of Undying (1 is default)",
+    "carpet.rule.stackableUnstackablesAmount.desc": "Sets the maximum stack size for unstackable items (1 is default/disabled)",
+    "carpet.rule.stackableUnstackables.desc": "Comma-separated list of Minecraft item identifiers (e.g.: minecraft:totem_of_undying,minecraft:water_bucket) or just the item name (e.g.: totem_of_undying,water_bucket). obfuscation mappings are dumb - veygax",
     "carpet.rule.playerLeash.desc": "Allows players to leash other players with leads"
 }
