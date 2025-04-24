@@ -1,38 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "carpet-vtt-extension",
+  "id": "robercarpet",
   "version": "${version}",
 
-  "name": "Carpet VTT Extension",
-  "description": "Placeholder",
+  "name": "Rober Carpet",
+  "description": "A carpet extension by Rob3r8",
   "authors": [
-    "VeygaX"
+    "Rober/Rob3r8"
   ],
   "contact": {
-    "homepage": "https://veygax.dev/",
-    "issues": "https://github.com/veygax/carpet-vtt-extension/issues",
-    "sources": "https://github.com/veygax/carpet-vtt-extension"
+    "homepage": "https://fabricmc.net/"
   },
 
-  "license": "MIT",
-  "icon": "assets/carpet-vtt-extension/icon.png",
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "carpet_vtt_extension.VTTExtension"
+      "net.rober.robercarpet.RoberCarpet"
     ]
   },
   "mixins": [
-    "carpet-vtt-extension.mixins.json"
+    "robercarpet.mixins.json"
   ],
 
   "depends": {
-    "minecraft": "1.21.x",
-    "fabricloader": ">=0.16.x",
-    "carpet": "*"
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "*",
+    "java": ">=17"
   },
   "suggests": {
-    "flamingo": "*"
+    "another-mod": "*"
   }
 }
