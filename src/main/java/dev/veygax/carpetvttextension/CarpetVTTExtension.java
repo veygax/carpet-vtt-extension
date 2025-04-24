@@ -2,10 +2,12 @@ package dev.veygax.carpetvttextension;
 
 import carpet.CarpetExtension;
 import carpet.CarpetServer;
-import carpet.settings.SettingsManager;
+import carpet.api.settings.SettingsManager;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import carpet.utils.Translations;
+import java.util.Map;
 
 public class CarpetVTTExtension implements ModInitializer, CarpetExtension {
 	// This logger is used to write text to the console and the log file.
@@ -24,5 +26,11 @@ public class CarpetVTTExtension implements ModInitializer, CarpetExtension {
 	@Override
 	public void onGameStarted(){
 		CarpetServer.settingsManager.parseSettingsClass(VTTSettings.class);
+	}
+
+	@Override
+	public Map<String, String> canHasTranslations(String lang) {
+		return Translations.getTranslationFromResourcePath(
+				String.format("assets/carpetvttextension/lang/%s.json", lang));
 	}
 }
