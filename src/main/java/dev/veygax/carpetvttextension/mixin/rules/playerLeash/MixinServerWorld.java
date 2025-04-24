@@ -1,6 +1,6 @@
 package dev.veygax.carpetvttextension.mixin.rules.playerLeash;
 
-import dev.veygax.carpetvttextension.util.LeashProxyEntity;
+import dev.veygax.carpetvttextension.util.playerLeash.LeashProxyEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.server.world.ServerWorld;
 import org.spongepowered.asm.mixin.Mixin;

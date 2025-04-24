@@ -1,7 +1,7 @@
 package dev.veygax.carpetvttextension.mixin.rules.playerLeash;
 
 import dev.veygax.carpetvttextension.VTTSettings;
-import dev.veygax.carpetvttextension.util.LeashImpl;
+import dev.veygax.carpetvttextension.util.playerLeash.LeashImpl;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;

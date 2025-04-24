@@ -1,4 +1,4 @@
-package dev.veygax.carpetvttextension.util;
+package dev.veygax.carpetvttextension.util.playerLeash;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
