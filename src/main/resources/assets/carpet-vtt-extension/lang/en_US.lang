@@ -1,0 +1,8 @@
+## Carpet VTT Extension language file
+
+## Rule descriptions
+rule.boolSetting.name=Bool Setting
+rule.boolSetting.desc=Example boolean setting for the VTT extension
+
+## Categories
+category.carpet-vtt-extension=VTT Extension 

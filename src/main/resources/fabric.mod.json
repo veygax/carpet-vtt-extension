@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "carpet-vtt-extension",
+  "version": "${version}",
+
+  "name": "Carpet VTT Extension",
+  "description": "Placeholder",
+  "authors": [
+    "VeygaX"
+  ],
+  "contact": {
+    "homepage": "https://veygax.dev/",
+    "issues": "https://github.com/veygax/carpet-vtt-extension/issues",
+    "sources": "https://github.com/veygax/carpet-vtt-extension"
+  },
+
+  "license": "MIT",
+  "icon": "assets/carpet-vtt-extension/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "carpet_vtt_extension.VTTExtension"
+    ]
+  },
+  "mixins": [
+    "carpet-vtt-extension.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.21.x",
+    "fabricloader": ">=0.16.x",
+    "carpet": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
