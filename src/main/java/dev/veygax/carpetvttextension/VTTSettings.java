@@ -12,4 +12,7 @@ public class VTTSettings {
     
     @Rule(categories = {VTTCategory, SURVIVAL},options = {"1", "16", "64"}, strict = false)
     public static int stackableTotems = 1;
+
+    @Rule(categories = {VTTCategory, SURVIVAL})
+    public static boolean playerLeash = false;
 }

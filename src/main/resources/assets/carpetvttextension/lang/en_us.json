@@ -1,3 +1,4 @@
 {
-    "carpet.rule.stackableTotems.desc": "Sets the maximum stack size for Totems of Undying (1 is default)"
+    "carpet.rule.stackableTotems.desc": "Sets the maximum stack size for Totems of Undying (1 is default)",
+    "carpet.rule.playerLeash.desc": "Allows players to leash other players with leads"
 }
