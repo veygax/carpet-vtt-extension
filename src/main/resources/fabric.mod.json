@@ -1,15 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "robercarpet",
+  "id": "carpetvttextension",
   "version": "${version}",
 
-  "name": "Rober Carpet",
-  "description": "A carpet extension by Rob3r8",
+  "name": "Carpet VTT Extension",
+  "description": "Veyga's Tweaks and Tools containing Carpet adjustments based on what I thought was cool",
   "authors": [
-    "Rober/Rob3r8"
+    "VeygaX",
+    "RLLD576 for the original mod"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/"
+    "homepage": "https://veygax.dev/",
+    "source": "https://github.com/VeygaX/Carpet-VTT-Extension",
+    "issues": "https://github.com/VeygaX/Carpet-VTT-Extension/issues"
   },
 
   "license": "CC0-1.0",
@@ -18,20 +21,26 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.rober.robercarpet.RoberCarpet"
+      "dev.veygax.carpetvttextension.CarpetVTTExtension"
     ]
   },
   "mixins": [
-    "robercarpet.mixins.json"
+    "vtt.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "*",
-    "java": ">=17"
+    "java": ">=21"
   },
-  "suggests": {
-    "another-mod": "*"
+  "custom": {
+    "modmenu": {
+      "parent": "carpet",
+      "links": {
+        "Discord": "https://dsc.gg/veygax",
+        "Website": "https://veygax.dev/"
+      }
+    }
   }
 }

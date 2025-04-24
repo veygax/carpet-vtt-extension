@@ -1,10 +1,10 @@
 plugins {
-	id 'fabric-loom' version '1.6-SNAPSHOT'
+	id 'fabric-loom' version '1.10-SNAPSHOT'
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -36,8 +36,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	// Minecraft 1.17 (21w19a) upwards uses Java 16.
-	it.options.release = 16
+	it.options.release = 21
 }
 
 java {
@@ -76,7 +75,7 @@ loom {
 		runDir = "../../run" // Use a shared run folder and just create separate worlds
 	}
 }
-if (stonecutter.current.isActive) {
+if (stonecutter.current.active) {
 	rootProject.tasks.register("buildActive") {
 		group = "project"
 		dependsOn(tasks.named("build"))

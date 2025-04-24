@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.veygax.carpetvttextension.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "rules.stackableTotems.ItemStack_stackableTotemsMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
